@@ -1,0 +1,35 @@
+
+body{
+    padding: unset;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'daniel daniel jonathan kira'
+                        'jeanette patrick patrick kira';
+    gap: 3rem;
+
+    max-width: 111rem;
+    width: 80%;
+    height: 58rem;
+}
+.daniel{
+    background-position: top 0.5rem right 10rem;
+}
+.daniel{
+    grid-area: daniel;
+}
+.jonathan{
+    grid-area: jonathan;
+}
+.jeanette{
+    grid-area: jeanette;
+}
+.patrick{
+    grid-area: patrick;
+}
+.kira{
+    grid-area: kira;
+}
