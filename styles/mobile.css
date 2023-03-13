@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/BarlowSemiCondensed-Bold.ttf');
+    font-weight: 700;
+}
+
+:root{
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackist-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --font: 'Barlow', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7rem 0;
+
+    font-size: 1.3rem;
+    font-family: var(--font);
+    font-weight: 600;
+
+    background-color: var(--light-grayish-blue);
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    gap: 3rem;
+
+    max-width: 37.5rem;
+    width: 86%;
+}
+.main__section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2.5rem 2.5rem;
+
+    border-radius: 1rem;
+}
+.daniel{
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-position: top 0.5rem right 1.5rem;
+    background-repeat: no-repeat;
+}
+.section__header{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header__image{
+    width: 3.5rem;
+    height: 3.5rem;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.5rem;
+    border-radius: 50%;
+}
+.header__info{
+    display: flex;
+    flex-direction: column;
+}
+.header__name{
+    color: white;
+}
+.kira .header__name ,.jeanette .header__name{
+    color: var(--very-dark-grayish-blue);
+}
+.kira .header__degree ,.jeanette .header__degree{
+    color: hsl(217, 19%, 35%, 0.50);
+}
+
+.header__degree{
+    color: rgba(255, 255, 255, 0.50);
+}
+.section__title{
+    font-weight: 700;
+    font-size: 1.9rem;
+
+    color: white;
+}
+.kira .section__title ,.jeanette .section__title{
+    color: var(--very-dark-grayish-blue);
+}
+.kira .section__text ,.jeanette .section__text{
+    color: hsl(217, 19%, 35%, 0.70);
+}
+.section__text{
+    color: rgb(255, 255, 255, 0.70);
+}
+.daniel{
+    background-color: var(--moderate-violet);
+}
+.daniel .header__image{
+    background-image: url('../images/image-daniel.jpg');
+}
+.jonathan{
+    background-color: var(--very-dark-grayish-blue);
+}
+.jonathan .header__image{
+    background-image: url('../images/image-jonathan.jpg');
+}
+.jeanette{
+    background-color: white;
+}
+.jeanette .header__image{
+    background-image: url('../images/image-jeanette.jpg');
+}
+.patrick{
+    background-color: var(--very-dark-blackist-blue);
+}
+.patrick .header__image{
+    background-image: url('../images/image-patrick.jpg');
+}
+.kira{
+    background-color: white;
+}
+.kira .header__image{
+    background-image: url('../images/image-kira.jpg');
+}
